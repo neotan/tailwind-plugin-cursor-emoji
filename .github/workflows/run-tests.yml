@@ -12,13 +12,13 @@ jobs:
     name: Run Tests
     strategy:
       matrix:
-        node: [18.x]
+        node: [16.x]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 

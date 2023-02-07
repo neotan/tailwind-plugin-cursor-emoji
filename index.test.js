@@ -1,14 +1,13 @@
-import { cursorEmoji } from '../src'
-import type { FontSizes, Colors } from '../src'
+const createCursorEmoji = require('./createCursorEmoji')
 
-const fontSizes: FontSizes = {
+const fontSizes = {
   'lg': ['1.125rem', { 'lineHeight': '1.75rem' }],
   'xl': ['1.25rem', { 'lineHeight': '1.75rem' }],
   '3xl': ['1.875rem', { 'lineHeight': '2.25rem' }],
   '4xl': ['2.25rem', { 'lineHeight': '2.5rem' }],
   '9xl': ['8rem', { lineHeight: '2.5rem' }],
 }
-const colors: Colors = {
+const colors = {
   'green-500': '#22c55e',
   'blue-500': '#3b82f6',
   'red-500': '#ef4444',
@@ -72,7 +71,7 @@ const cases = [
 ]
 
 test.each(cases)('Create cursor for class: $input', ({ input, expected }) => {
-  expect(cursorEmoji({ fontSizes, colors })(input)).toEqual(expected)
+  expect(createCursorEmoji({ fontSizes, colors })(input)).toEqual(expected)
 })
 
 describe('Log error message when the size of cursor exceeded browser limit.', () => {
@@ -87,7 +86,7 @@ describe('Log error message when the size of cursor exceeded browser limit.', ()
   })
 
   test('Log error message when Computed fontSize or height or width > MAX_CURSOR_SIZE', () => {
-    cursorEmoji({ fontSizes, colors })('😜/9xl')
+    createCursorEmoji({ fontSizes, colors })('😜/9xl')
     expect(consoleError).toBeCalled()
   })
 })

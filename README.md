@@ -1,6 +1,7 @@
 # Emoji Cursor Plugin for Tailwind CSS
 ![Tests](https://github.com/neotan/tailwind-plugin-cursor-emoji/workflows/Tests/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1e75191e4b1444c59be79054984c5d78)](https://www.codacy.com/gh/neotan/tailwind-plugin-cursor-emoji/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=neotan/tailwind-plugin-cursor-emoji&amp;utm_campaign=Badge_Grade)
+![npm](https://img.shields.io/npm/dt/tailwind-plugin-cursor-emoji)
 
 Adds emoji to cursor for tailwind.
 

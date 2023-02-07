@@ -1,23 +1,19 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint'
-  ],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
+    parser: 'babel-eslint',
     sourceType: 'module'
   },
   env: {
-    es6: true
+    node: true,
+    jest: true
   },
   rules: {
     quotes: ['warn', 'single'],
     semi: ['warn', 'never'],
-    'indent': ['warn', 2],
+    indent: ['warn', 2]
   },
 }
