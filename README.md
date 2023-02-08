@@ -28,19 +28,27 @@ plugins: [
 
 ## Usage
 
-Use these classes like ordinary tailwind classes, and differentiate them with various parameter combinations.
+Use these classes like ordinary tailwind classes, and differentiate them with various parameter combinations. The basic syntax is:
+
+```jsx
+<div className="flex rounded cursor-emoji-[<EMOJI>/<SIZE>/<COLOR>/<OPACITY>]">
+    content
+</div>
+```
+
+## Examples
 
 |Class|Cursor|
 |---|---|
 |`cursor-emoji-[😜/lg]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_lg].svg"/>|
-|`cursor-emoji-[O]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O].svg"/>|
-|`cursor-emoji-[O/40]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_40].svg"/>|
-|`cursor-emoji-[O/4xl/red]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_red].svg"/>|
-|`cursor-emoji-[O/4xl/green-500]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_green-500].svg"/>|
-|`cursor-emoji-[O/4xl/#e76215]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_e76215].svg"/>|
-|`cursor-emoji-[O/4xl/rgb(231,98,21)]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_rgb(231,98,21)].svg"/>|
-|`cursor-emoji-[O/4xl/hsl(22deg,84%,49%)]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_hsl(22deg,84,49)].svg"/>|
-|`cursor-emoji-[O/4xl/blue-500/70]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_blue-500_70].svg"/>|
+|`cursor-emoji-[😜]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O].svg"/>|
+|`cursor-emoji-[😜/40]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_40].svg"/>|
+|`cursor-emoji-[😜/4xl/red]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_red].svg"/>|
+|`cursor-emoji-[😜/4xl/green-500]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_green-500].svg"/>|
+|`cursor-emoji-[😜/4xl/#e76215]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_e76215].svg"/>|
+|`cursor-emoji-[😜/4xl/rgb(231,98,21)]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_rgb(231,98,21)].svg"/>|
+|`cursor-emoji-[😜/4xl/hsl(22deg,84%,49%)]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_hsl(22deg,84,49)].svg"/>|
+|`cursor-emoji-[😜/4xl/blue-500/70]` | <img src="https://raw.githubusercontent.com/neotan/tailwind-plugin-cursor-emoji/master/images/cursor-emoji-[O_4xl_blue-500_70].svg"/>|
 
 ## License
 

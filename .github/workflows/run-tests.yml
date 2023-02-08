@@ -27,7 +27,7 @@ jobs:
           npm ci
 
       - name: Lint code
-        if: ${{ matrix.node == '18.x' }}
+        if: ${{ matrix.node == '16.x' }}
         run: npm run lint
 
       - name: Run tests
