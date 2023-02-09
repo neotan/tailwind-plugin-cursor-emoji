@@ -1,6 +1,6 @@
 {
   "name": "tailwind-plugin-cursor-emoji",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Tailwind plugin for using emoji as cursor",
   "author": "Neo TAN",
   "repository": "https://github.com/neotan/tailwind-plugin-cursor-emoji",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "echo \"Nothing to build\" && exit 0",
     "lint": "eslint . --fix",
-    "dev": "npm run test --watchAll",
+    "dev": "npm run test -- --watchAll",
     "test": "jest --collectCoverage"
   },
   "peerDependencies": {
