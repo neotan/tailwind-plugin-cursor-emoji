@@ -18,6 +18,8 @@ or
 npm install --save-dev tailwind-plugin-cursor-emoji
 ```
 
+### Tailwind CSS v3
+
 Add it to the plugins array of `tailwind.config.js`.
 
 ```js
@@ -27,6 +29,16 @@ plugins: [
     // ...
     require('tailwind-plugin-cursor-emoji'),
 ],
+```
+
+### Tailwind CSS v4
+
+Add it with the `@plugin` directive in your CSS file.
+
+```css
+/* app.css */
+@import "tailwindcss";
+@plugin "tailwind-plugin-cursor-emoji";
 ```
 
 ## Usage
