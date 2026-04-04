@@ -4,12 +4,10 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    parser: 'babel-eslint',
     sourceType: 'module'
   },
   env: {
-    node: true,
-    jest: true
+    node: true
   },
   rules: {
     quotes: ['warn', 'single'],
