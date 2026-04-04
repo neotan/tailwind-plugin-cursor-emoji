@@ -39,7 +39,7 @@ export default function createCursorEmoji({ fontSizes = {}, colors = {} }) {
       return {
         cursor: 'url(\''
           + svgToDataURL(`<svg xmlns="http://www.w3.org/2000/svg" width="${(width).toFixed(0)}" height="${(height).toFixed(0)}" viewport="0 0 100 100" fill="${arrowColor}" fill-opacity="${(opacity).toFixed(2)}" style="font-size:${(fontSize).toFixed(0)}px;"><text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle">${emoji}</text><path d="M 1.842476487159729 8.157524108886719 A 1.0792976844564792 1.0792976844564792 0 0 1 9.653412291754648e-8 7.394345760345459 L 9.653412291754648e-8 1.0792977809906006 A 1.0792976844564792 1.0792976844564792 0 0 1 1.0792977809906006 9.653412291754648e-8 L 7.394345283508301 9.653412291754648e-8 A 1.0792976844564792 1.0792976844564792 0 0 1 8.157524108886719 1.842476487159729 L 1.842476487159729 8.157524108886719 Z " transform="matrix(1 0 0 1 -3.92828e-7 -0.00000107009)"></path></svg>`)
-          + '\') 0 0, auto;'
+          + '\') 0 0, auto'
       }
     } catch (error) {
       console.error(error)
