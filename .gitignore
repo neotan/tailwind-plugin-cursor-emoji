@@ -1,4 +1,4 @@
-/dist
-node_modules
-/coverage
-.vscode
+dist/
+node_modules/
+coverage/
+.vscode/

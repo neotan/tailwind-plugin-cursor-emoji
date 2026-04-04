@@ -1,21 +1,32 @@
 {
   "name": "tailwind-plugin-cursor-emoji",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Tailwind plugin for using emoji as cursor",
   "author": "Neo TAN",
   "repository": "https://github.com/neotan/tailwind-plugin-cursor-emoji",
   "homepage": "https://github.com/neotan/tailwind-plugin-cursor-emoji",
   "license": "MIT",
   "private": false,
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "echo \"Nothing to build\" && exit 0",
-    "lint": "eslint . --fix",
-    "dev": "npm run test -- --watchAll",
-    "test": "jest --collectCoverage"
+    "build": "tsup",
+    "dev": "vitest",
+    "test": "vitest run",
+    "lint": "eslint src/ tests/ --fix"
   },
   "peerDependencies": {
-    "tailwindcss": "^3.0"
+    "tailwindcss": ">=3.0.0"
   },
   "dependencies": {
     "svg-to-dataurl": "^1.0.0",
@@ -23,7 +34,8 @@
   },
   "devDependencies": {
     "eslint": "^8.33.0",
-    "eslint-plugin-jest": "^27.2.1",
-    "jest": "^29.4.1"
+    "tailwindcss": "^3.4.0",
+    "tsup": "^8.0.0",
+    "vitest": "^3.0.0"
   }
 }

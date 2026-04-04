@@ -1,1 +1,10 @@
 /images
+/src
+/tests
+/docs
+/coverage
+/.github
+/.vscode
+/.eslintrc.js
+tsup.config.ts
+vitest.config.ts
