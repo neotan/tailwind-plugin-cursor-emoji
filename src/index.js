@@ -22,19 +22,8 @@ export default function ({ matchUtilities, theme }) {
     'cursor-emoji': createCursorEmoji({ fontSizes, colors }),
   }, {
     values: {
-      wave: '👋',
-      point: '👆',
-      grab: '✊',
-      peace: '✌️',
-      thumbsup: '👍',
-      fire: '🔥',
-      heart: '❤️',
-      star: '⭐',
-      rocket: '🚀',
-      eyes: '👀',
-      clap: '👏',
-      sparkles: '✨',
       __BARE_VALUE__: (value) => value.value,
     },
+    type: 'any',
   })
 }
