@@ -1,5 +1,5 @@
 # Emoji Cursor Plugin for Tailwind CSS
-![Tests](https://github.com/neotan/tailwind-plugin-cursor-emoji/workflows/Tests/badge.svg)
+![Tests](https://github.com/neotan/tailwind-plugin-cursor-emoji/workflows/Publish%20to%20NPM/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1e75191e4b1444c59be79054984c5d78)](https://www.codacy.com/gh/neotan/tailwind-plugin-cursor-emoji/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=neotan/tailwind-plugin-cursor-emoji&amp;utm_campaign=Badge_Grade)
 ![npm](https://img.shields.io/npm/dt/tailwind-plugin-cursor-emoji)
 
@@ -11,11 +11,17 @@ Adds emoji to cursor for tailwind.
 ## Installation
 
 ```bash
-yarn add -D tailwind-plugin-cursor-emoji
-```
-or
-```bash
 npm install --save-dev tailwind-plugin-cursor-emoji
+```
+
+### Tailwind CSS v4
+
+Add it with the `@plugin` directive in your CSS file.
+
+```css
+/* app.css */
+@import "tailwindcss";
+@plugin "tailwind-plugin-cursor-emoji";
 ```
 
 ### Tailwind CSS v3
@@ -31,22 +37,21 @@ plugins: [
 ],
 ```
 
-### Tailwind CSS v4
-
-Add it with the `@plugin` directive in your CSS file.
-
-```css
-/* app.css */
-@import "tailwindcss";
-@plugin "tailwind-plugin-cursor-emoji";
-```
-
 ## Usage
 
-Use these classes like ordinary tailwind classes, and differentiate them with various parameter combinations. The basic syntax is:
+Use the arbitrary value syntax with any emoji. Parameters are separated by `/`:
+
+```
+cursor-emoji-[<EMOJI>/<SIZE>/<COLOR>/<OPACITY>]
+```
+
+- **EMOJI** — Any emoji (required)
+- **SIZE** — Tailwind font size (e.g. `lg`, `4xl`, `5xl`) or a number in px (e.g. `40`)
+- **COLOR** — Tailwind color (e.g. `gray-900`), hex (`#e76215`), `rgb()`, or `hsl()`
+- **OPACITY** — 0–100 (default: `100`)
 
 ```jsx
-<div className="flex rounded cursor-emoji-[<EMOJI>/<SIZE>/<COLOR>/<OPACITY>]">
+<div className="cursor-emoji-[🤪/5xl/gray-900/90]">
     content
 </div>
 ```
